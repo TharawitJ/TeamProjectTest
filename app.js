@@ -6,6 +6,7 @@ const PORT = 3000;
 
 app.get("/", (req, res) => res.send("Welcome to api!"));
 app.get("/users", (req, res) => res.send("User List"));
+app.get('/products', (req, res) => res.send('Product List')); 
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
