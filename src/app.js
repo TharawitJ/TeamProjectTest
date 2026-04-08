@@ -8,6 +8,8 @@ app.get('/', (req, res) => {
   res.send("Welcome to api!");
 });
 
+app.get('/users', (req, res) => res.send('User List'));
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
